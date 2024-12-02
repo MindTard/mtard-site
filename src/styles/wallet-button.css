@@ -1,0 +1,30 @@
+.wallet-adapter-button {
+  font-family: 'Minecraft', sans-serif !important;
+  background: #2c2c2c !important;
+  border: 2px solid #1a1a1a !important;
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+  color: #ffffff !important;
+  text-shadow: 2px 2px #000a !important;
+  font-size: 16px !important;
+  padding: 8px 16px !important;
+  height: auto !important;
+  transition: all 0.1s ease-in-out !important;
+}
+
+.wallet-adapter-button:hover {
+  background: #3c3c3c !important;
+  border-color: #2a2a2a !important;
+  box-shadow: inset -3px -4px #0009, inset 3px 3px #fff9;
+}
+
+.wallet-adapter-button:active {
+  box-shadow: inset 4px 4px #0006, inset -4px -4px #fff7;
+}
+
+.wallet-adapter-button-trigger {
+  background: linear-gradient(180deg, #7e34bf 0%, #5a2587 100%) !important;
+}
+
+.wallet-adapter-button-trigger:hover {
+  background: linear-gradient(180deg, #9745db 0%, #7e34bf 100%) !important;
+}

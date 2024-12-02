@@ -1,0 +1,295 @@
+
+/* Minecraft Background */
+.minecraft-bg {
+  background-color: #1D1F21;
+  background-image: 
+    linear-gradient(rgba(48, 48, 48, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 48, 48, 0.2) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Minecraft Button */
+.minecraft-btn {
+  background-color: #727272;
+  border: 2px solid;
+  border-color: #999999 #3F3F3F #3F3F3F #999999;
+  color: #FFFFFF;
+  font-family: 'Minecraft', monospace;
+  padding: 6px 12px;
+  text-shadow: 2px 2px #000000;
+  image-rendering: pixelated;
+  transition: all 0.1s;
+}
+
+.minecraft-btn:hover:not(.disabled) {
+  background-color: #8B8B8B;
+}
+
+.minecraft-btn:active:not(.disabled) {
+  border-color: #3F3F3F #999999 #999999 #3F3F3F;
+  transform: translateY(1px);
+}
+
+.minecraft-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.minecraft-btn-active {
+  background-color: #546E16;
+  border-color: #7BA618 #2F3F0C #2F3F0C #7BA618;
+}
+
+
+/* Minecraft Panel */
+.minecraft-panel {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #373737;
+  padding: 16px;
+}
+
+/* Minecraft Text Styles */
+.minecraft-text {
+  color: #FFFFFF;
+  font-family: 'Minecraft', monospace;
+  text-shadow: 2px 2px #000000;
+}
+
+.minecraft-text-green {
+  color: #55FF55;
+}
+
+.minecraft-text-blue {
+  color: #5555FF;
+}
+
+.minecraft-text-gray {
+  color: #AAAAAA;
+}
+
+/* Minecraft Scroll */
+.minecraft-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #727272 #1D1F21;
+}
+
+.minecraft-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.minecraft-scroll::-webkit-scrollbar-track {
+  background: #1D1F21;
+}
+
+.minecraft-scroll::-webkit-scrollbar-thumb {
+  background-color: #727272;
+  border: 2px solid #1D1F21;
+}
+
+/* Minecraft Icon Button */
+.minecraft-btn-icon {
+  background-color: #727272;
+  border: 2px solid;
+  border-color: #999999 #3F3F3F #3F3F3F #999999;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+
+.minecraft-btn-icon:hover {
+  background-color: #8B8B8B;
+}
+
+.minecraft-btn-icon:active {
+  border-color: #3F3F3F #999999 #999999 #3F3F3F;
+  transform: translateY(1px);
+}
+
+.minecraft-btn:hover {
+  background-color: rgba(100, 100, 255, 0.45);
+}
+
+.minecraft-btn:active {
+  top: 1px;
+}
+
+/* Navigation Icons */
+.nav-icon {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.minecraft-btn-icon:hover .nav-icon {
+  color: #4ade80;
+  transform: scale(1.1);
+}
+
+/* Minecraft-style container */
+.minecraft-container {
+  background-color: #C6C6C6;
+  border: 3px solid;
+  border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+  image-rendering: pixelated;
+  padding: 10px;
+}
+
+/* Minecraft-style input */
+.minecraft-input {
+  background-color: #000000;
+  border: 2px solid #555555;
+  color: #FFFFFF;
+  font-family: 'Minecraft', monospace;
+  padding: 8px;
+}
+
+.minecraft-title {
+  font-family: 'Minecraft', monospace;
+  color: #FFFF55;
+  text-shadow: 2px 2px #3F3F00;
+}
+
+.bg-grid {
+  background-color: #000000;
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom cursor */
+
+
+*, *:hover, *:active, *:focus {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Minecraft_Diamond_Pickaxe_Cursor.png'), auto !important;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Minecraft_Diamond_Pickaxe_Cursor.png'), auto !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border: 2px solid #373737;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #656565;
+  border: 2px solid #373737;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #656565 #2d2d2d;
+}
+
+.minecraft-scroll {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Minecraft_Diamond_Pickaxe_Cursor.png'), auto !important;
+  scrollbar-width: thin;
+  scrollbar-color: #656565 #2d2d2d;
+}
+
+.minecraft-scroll * {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Minecraft_Diamond_Pickaxe_Cursor.png'), auto !important;
+}
+
+.dexscreener-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.minecraft-btn-icon:hover .dexscreener-icon {
+  color: #4ade80;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.custom-scrollbar {
+  cursor: inherit !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  cursor: inherit !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2d2d2d;
+  border: 2px solid #373737;
+  cursor: inherit !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #656565;
+  border: 2px solid #373737;
+  cursor: inherit !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
+  cursor: inherit !important;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #656565 #2d2d2d;
+}
+
+.custom-scrollbar * {
+  cursor: inherit !important;
+}
